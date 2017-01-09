@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Message Splitter</title>
+    <link rel="icon"
+          type="image/png"
+          href="./media/mail.png"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div id="window">
+
+      <div id="nav"><a href="http://www.akashiclabs.co.za">Home</a></div>
+
+      <div id="info">
+        Some sites, like Twitter, have a character limit, forcing you to split
+        long messages into chunks. This tool splits the message into
+        individual ones of specified length.
+      </div>
+
+      <div id="rightPanel">
+        <br/>
+        <div id="splitMessages"></div>
+      </div>
+
+      <div id="inputArea">
+        <textarea id="message" placeholder="Message..."></textarea>
+        <label for="chunkSize">Size of each message (number of characters):</label>
+        <input id="chunkSize" type="number" min="1"></input>
+
+        <button id="msgButton" type="button" onClick="messageSplit();">Split message</button>
+        <br/><br/>
+      </div>
+
+    </div>
+  </body>
+
+  </html>
